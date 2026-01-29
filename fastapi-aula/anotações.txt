@@ -1,0 +1,5 @@
+CRUD:
+    GET - Pegar/ Ler
+    POST - Enviar / Criar
+    PUT / PATCH - Editar
+    DELETE - Deletar

@@ -1,9 +1,8 @@
-# uvicorn main:app --reload
 from fastapi import FastAPI
 app = FastAPI()
 
-from auth_routes import auth_router 
-from order_routes import order_router
+from rotas_autenticacao import roteador_autenticacao
+from rotas_pedidos import roteador_pedidos
 
-app.include_router(auth_router)
-app.include_router(order_router)
+app.add_api_route(roteador_autenticacao)
+app.add_api_route(roteador_pedidos)
